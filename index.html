@@ -39,6 +39,29 @@
 
         body {
             font-family: var(--bs-body-font-family);
+            scroll-behavior: smooth;
+        }
+
+        /* Color de selección de marca */
+        ::selection {
+            background-color: var(--bs-secondary);
+            color: white;
+        }
+
+        /* Barra de desplazamiento elegante */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #1e293b;
+            border-radius: 5px;
+            border: 2px solid #0f172a;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--bs-secondary);
         }
 
         .btn-primary {
@@ -48,6 +71,8 @@
             border-radius: 5px;
             padding: 0.75rem 2rem;
             font-weight: 600;
+            max-width: 100%;
+            white-space: normal;
         }
 
         .btn-primary:hover,
@@ -718,11 +743,27 @@
         <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
             <div class="d-flex justify-content-center">
                 <div class="text-center" data-aos="zoom-in" data-aos-duration="1000" style="margin-top: -50px;">
-                    <h1 class="mx-auto my-0 text-uppercase text-white" style="font-weight: 900; line-height: 0.85; letter-spacing: -2px;">
-                        <span style="font-size: 6rem; display: block;">L&L GLOBAL</span>
-                        <span style="font-size: 7.5rem; display: block;">SERVICES</span>
-                        <span style="font-size: 1.5rem; display: block; letter-spacing: 10px; margin-top: 10px; opacity: 0.8; font-weight: 400;">E.I.R.L.</span>
+                    <h1 class="mx-auto my-0 text-uppercase text-white hero-adaptive-title" style="font-weight: 900; line-height: 0.9; letter-spacing: -1px; text-shadow: 0 4px 15px rgba(0,0,0,0.5);">
+                        <span class="l1">L&L GLOBAL</span>
+                        <span class="l2">SERVICES</span>
+                        <span class="l3">E.I.R.L.</span>
                     </h1>
+                    <style>
+                        .hero-adaptive-title .l1 { font-size: 5.5rem; display: block; }
+                        .hero-adaptive-title .l2 { font-size: 7rem; display: block; }
+                        .hero-adaptive-title .l3 { font-size: 1.5rem; display: block; opacity: 0.8; font-weight: 400; letter-spacing: 10px; margin-top: 10px; }
+
+                        @media (max-width: 991.98px) {
+                            .hero-adaptive-title .l1 { font-size: 4rem; }
+                            .hero-adaptive-title .l2 { font-size: 5.5rem; }
+                        }
+
+                        @media (max-width: 575.98px) {
+                            .hero-adaptive-title .l1 { font-size: 2.5rem; }
+                            .hero-adaptive-title .l2 { font-size: 3.5rem; }
+                            .hero-adaptive-title .l3 { font-size: 1rem; letter-spacing: 5px; }
+                        }
+                    </style>
                     <style>
                         @media (max-width: 768px) {
                             .masthead h1 {
@@ -1310,6 +1351,18 @@
         <div class="container px-4 px-lg-5">Copyright &copy; L&L Global Services 2026</div>
     </footer>
     <!-- Bootstrap core JS-->
+    <style>
+        .social:hover {
+            color: var(--bs-secondary) !important;
+            transform: scale(1.1) translateY(-3px);
+            transition: all 0.3s ease;
+        }
+        
+        /* Ajuste de nitidez para imágenes */
+        img {
+            image-rendering: -webkit-optimize-contrast;
+        }
+    </style>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
     <!-- Core theme JS-->
     <script src="js/scripts.js"></script>
