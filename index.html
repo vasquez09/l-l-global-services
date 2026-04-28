@@ -1,0 +1,1425 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description"
+        content="L&L Global Services E.I.R.L - Servicios generales de mantenimiento, reparación e instalaciones en Nauta, Loreto. Electricidad, pintura y más." />
+    <meta name="author" content="L&L Global Services E.I.R.L" />
+    <meta name="keywords"
+        content="servicios generales, mantenimiento, reparación, instalaciones, electricidad, pintura, Nauta, Loreto" />
+    <meta property="og:title" content="L&L Global Services E.I.R.L - Servicios Generales" />
+    <meta property="og:description"
+        content="Soluciones rápidas y confiables para hogares, negocios y empresas en Nauta y Loreto." />
+    <meta property="og:type" content="website" />
+    <meta property="og:locale" content="es_PE" />
+    <title>L&L Global Services | Servicios Generales</title>
+    <link rel="icon" type="image/svg+xml"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512'><path fill='%23ff7e5f' d='M507.73 109.1c-2.24-9.03-13.54-12.09-20.12-5.51l-74.36 74.36-67.88-11.31-11.31-67.88 74.36-74.36c6.62-6.62 3.43-17.9-5.66-20.16-47.38-11.74-99.55.91-136.58 37.93-39.64 39.64-50.55 97.1-34.05 147.2L18.74 445.64c-24.99 24.99-24.99 65.51 0 90.5s65.51 24.99 90.5 0l256.1-256.1c50.1 16.5 107.56 5.59 147.2-34.05 37.02-37.03 49.67-89.2 37.93-136.58z'/></svg>">
+    <!-- Font Awesome icons (free version)-->
+    <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <!-- Custom Theme Colors & Styles -->
+    <style>
+        :root {
+            --bs-primary: #0f4c81;
+            /* Azul Clásico / Corporativo */
+            --bs-primary-rgb: 15, 76, 129;
+            --bs-secondary: #ff7e5f;
+            /* Coral / Naranja Suave */
+            --bs-secondary-rgb: 255, 126, 95;
+            --bs-link-color: #0f4c81;
+            --bs-link-hover-color: #0c3d66;
+            --bs-body-font-family: 'Outfit', sans-serif;
+        }
+
+        body {
+            font-family: var(--bs-body-font-family);
+        }
+
+        .btn-primary {
+            background-color: var(--bs-primary);
+            border-color: var(--bs-primary);
+            transition: all 0.3s ease;
+            border-radius: 5px;
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+        }
+
+        .btn-primary:hover,
+        .btn-primary:focus {
+            background-color: var(--bs-secondary);
+            border-color: var(--bs-secondary);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 12px rgba(255, 140, 0, 0.3);
+        }
+
+        .text-primary {
+            color: var(--bs-primary) !important;
+        }
+
+        .bg-black {
+            background-color: #0f172a !important;
+        }
+
+        .about-section {
+            background: linear-gradient(to bottom, rgba(15, 23, 42, 0.8) 0%, rgba(15, 23, 42, 0.9) 100%), url('assets/img/bg-signup-interior.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            padding: 8rem 0;
+        }
+
+        .project {
+            transition: transform 0.4s ease;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .project:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .img-fluid {
+            border-radius: 8px;
+        }
+
+        .masthead {
+            background: linear-gradient(to bottom, rgba(15, 23, 42, 0.3) 0%, rgba(15, 23, 42, 0.6) 75%, #0f172a 100%), url("assets/img/bg-masthead-construction.jpg");
+            background-size: cover;
+            background-position: center;
+        }
+
+        .btn-outline-light {
+            padding: 0.75rem 2rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+        }
+
+        .btn-outline-light:hover {
+            transform: translateY(-2px);
+            color: #0f172a;
+        }
+
+        /* WhatsApp Pulse Animation */
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+
+            70% {
+                transform: scale(1.05);
+                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+            }
+
+            100% {
+                transform: scale(1);
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+
+        .whatsapp-float-btn {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 40px;
+            right: 40px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+            z-index: 1000;
+            animation: pulse 2s infinite;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .whatsapp-float-btn:hover {
+            background-color: #128C7E;
+            color: #FFF;
+        }
+
+        .wa-tooltip {
+            position: fixed;
+            bottom: 50px;
+            right: 110px;
+            background-color: #fff;
+            color: #333;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: bold;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+            z-index: 1000;
+            opacity: 0;
+            transform: translateX(20px);
+            animation: slideIn 0.5s forwards 2s;
+            /* appears after 2s */
+        }
+
+        @keyframes slideIn {
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        .wa-tooltip::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -5px;
+            margin-top: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent transparent #fff;
+        }
+
+        .back-to-top {
+            position: fixed;
+            bottom: 120px;
+            right: 45px;
+            width: 50px;
+            height: 50px;
+            background-color: var(--bs-primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            text-decoration: none;
+            opacity: 0;
+            visibility: hidden;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            z-index: 999;
+        }
+
+        .back-to-top.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .back-to-top:hover {
+            background-color: var(--bs-secondary);
+            color: white;
+            transform: translateY(-3px);
+        }
+
+        .accordion-button:not(.collapsed) {
+            background-color: rgba(0, 86, 179, 0.1);
+            color: var(--bs-primary);
+            box-shadow: none;
+        }
+
+        .accordion-button:focus {
+            box-shadow: none;
+            border-color: rgba(0, 0, 0, 0.1);
+        }
+
+        .wave-divider {
+            position: absolute;
+            bottom: -1px;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .wave-divider svg {
+            position: relative;
+            display: block;
+            width: calc(100% + 1.3px);
+            height: 50px;
+        }
+
+        .wave-divider .shape-fill {
+            fill: #0f172a;
+        }
+
+        /* Preloader */
+        #preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #0f172a;
+            z-index: 99999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: opacity 0.5s ease;
+        }
+
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid rgba(255, 140, 0, 0.3);
+            border-top-color: var(--bs-secondary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Scroll Progress */
+        .scroll-progress-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: transparent;
+            z-index: 99999;
+        }
+
+        .scroll-progress-bar {
+            height: 100%;
+            background: var(--bs-secondary);
+            width: 0%;
+            transition: width 0.1s;
+        }
+
+        /* Pulse Red for Emergencies */
+        .pulse-red {
+            animation: pulse-red 1.5s infinite;
+        }
+
+        @keyframes pulse-red {
+            0% {
+                box-shadow: 0 0 0 0 rgba(220, 53, 69, 0.7);
+            }
+
+            70% {
+                box-shadow: 0 0 0 10px rgba(220, 53, 69, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(220, 53, 69, 0);
+            }
+        }
+
+        /* Marquee */
+        .marquee-wrapper {
+            width: 100%;
+            white-space: nowrap;
+            overflow: hidden;
+            background-color: var(--bs-primary);
+            color: white;
+            padding: 10px 0;
+            border-bottom: 3px solid var(--bs-secondary);
+        }
+
+        .marquee-content {
+            display: inline-block;
+            animation: marquee 25s linear infinite;
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+
+        @keyframes marquee {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* Custom Cursor */
+        @media (pointer: fine) {
+
+            body,
+            a,
+            button,
+            input,
+            textarea {
+                cursor: none !important;
+            }
+
+            .custom-cursor {
+                position: fixed;
+                width: 30px;
+                height: 30px;
+                border: 2px solid var(--bs-secondary);
+                border-radius: 50%;
+                pointer-events: none;
+                z-index: 999999;
+                transform: translate(-50%, -50%);
+                transition: width 0.2s, height 0.2s, background-color 0.2s;
+                box-shadow: 0 0 10px rgba(255, 140, 0, 0.5);
+            }
+
+            .custom-cursor-dot {
+                position: fixed;
+                width: 6px;
+                height: 6px;
+                background-color: var(--bs-secondary);
+                border-radius: 50%;
+                pointer-events: none;
+                z-index: 999999;
+                transform: translate(-50%, -50%);
+            }
+
+            .cursor-hover {
+                width: 50px;
+                height: 50px;
+                background-color: rgba(255, 140, 0, 0.2);
+                border-color: transparent;
+            }
+        }
+
+        /* Glassmorphism Classes */
+        .glass-nav {
+            background: rgba(15, 23, 42, 0.8) !important;
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .glass-card {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1) !important;
+            color: white;
+        }
+
+        /* Scroll Indicator */
+        .scroll-indicator {
+            position: absolute;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            color: white;
+            opacity: 0.7;
+        }
+
+        .mouse {
+            width: 25px;
+            height: 40px;
+            border: 2px solid white;
+            border-radius: 20px;
+            display: flex;
+            justify-content: center;
+            padding-top: 8px;
+            margin-bottom: 5px;
+        }
+
+        .wheel {
+            width: 4px;
+            height: 8px;
+            background: white;
+            border-radius: 2px;
+            animation: scroll-wheel 1.5s infinite;
+        }
+
+        @keyframes scroll-wheel {
+            0% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(15px);
+                opacity: 0;
+            }
+        }
+
+        /* Nav Buttons Premium */
+        .navbar-nav .nav-link {
+            padding: 0.6rem 1.2rem !important;
+            margin: 0 0.3rem;
+            border-radius: 50px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            font-size: 0.85rem;
+            border: 1px solid transparent;
+        }
+
+        .navbar-shrink .nav-link {
+            color: rgba(255, 255, 255, 0.8) !important;
+        }
+
+        .navbar-nav .nav-link:hover {
+            background: rgba(255, 255, 255, 0.1);
+            /* Glassmorphism neutro */
+            color: var(--bs-secondary) !important;
+            border-color: rgba(255, 126, 95, 0.4);
+            transform: translateY(-2px);
+        }
+
+        .navbar-nav .nav-link.active {
+            background: var(--bs-secondary) !important;
+            color: white !important;
+            box-shadow: 0 4px 15px rgba(255, 126, 95, 0.3);
+            border: none !important; /* Eliminamos el borde verde */
+            padding-bottom: 0.6rem !important; /* Mantenemos el padding original */
+        }
+
+        /* Forzamos la eliminación de bordes verdes de la plantilla original */
+        .navbar-light .navbar-nav .nav-link.active,
+        .navbar-light .navbar-nav .nav-link:focus,
+        .navbar-light .navbar-nav .nav-link:hover {
+            border-bottom: none !important;
+        }
+
+        @media (max-width: 991.98px) {
+            .navbar-nav .nav-link {
+                margin: 0.5rem 0;
+                text-align: center;
+                background: rgba(255, 255, 255, 0.05);
+            }
+        }
+
+        /* Testimonials Slider */
+        .testimonial-card {
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 10px;
+        }
+
+        .testimonial-avatar {
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            border: 3px solid var(--bs-secondary);
+            margin-bottom: 1rem;
+            object-fit: cover;
+        }
+
+        /* Service Cards Premium */
+        .project-card {
+            position: relative;
+            overflow: hidden;
+            border: none;
+            border-radius: 15px;
+            height: 350px;
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.5s ease, box-shadow 0.5s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        }
+
+        .project-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to bottom, rgba(15, 23, 42, 0.4) 0%, rgba(15, 23, 42, 0.85) 100%);
+            padding: 1.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* Centrado vertical */
+            align-items: center;
+            /* Centrado horizontal */
+            text-align: center;
+            transition: all 0.4s ease;
+            z-index: 1;
+        }
+
+        .project-overlay h4 {
+            font-weight: 900;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            font-size: 1.4rem;
+            /* Mucho más grande */
+            text-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
+            margin-bottom: 0.8rem;
+            color: #ffffff !important;
+            line-height: 1.2;
+        }
+
+        .project-overlay h4::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background: var(--bs-secondary);
+            margin: 10px auto 0;
+            /* Centrado */
+        }
+
+        .project-overlay p {
+            font-weight: 500;
+            font-size: 0.95rem;
+            line-height: 1.4;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
+            max-width: 90%;
+        }
+
+        .project-card:hover .project-overlay {
+            background: linear-gradient(to bottom, rgba(15, 23, 42, 0.1) 0%, rgba(15, 23, 42, 0.95) 100%);
+        }
+
+        .project-btn {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: all 0.4s ease;
+        }
+
+        .project-card:hover .project-btn {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .projects-section {
+            background: linear-gradient(to bottom, #0f172a 0%, #1e293b 100%);
+            position: relative;
+            padding-top: 5rem;
+            padding-bottom: 5rem;
+        }
+
+        .projects-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('assets/img/bg-projects-overlay.jpg');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.1;
+            /* Imagen de fondo muy sutil */
+            pointer-events: none;
+        }
+
+        /* Contact Form Premium */
+        .form-glass {
+            background: rgba(255, 255, 255, 0.03);
+            backdrop-filter: blur(15px);
+            -webkit-backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 3rem;
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.3);
+        }
+
+        .form-control-premium {
+            background: #1a2537 !important;
+            /* Fondo sólido oscuro para máxima legibilidad */
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #ffffff !important;
+            padding: 0.8rem 1.2rem;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+            font-size: 1rem;
+        }
+
+        .form-control-premium:focus {
+            background: #243147 !important;
+            border-color: var(--bs-secondary);
+            box-shadow: 0 0 0 0.25rem rgba(255, 126, 95, 0.2);
+            outline: none;
+        }
+
+        .form-control-premium::placeholder {
+            color: rgba(255, 255, 255, 0.5) !important;
+        }
+
+        select.form-control-premium {
+            cursor: pointer;
+        }
+
+        select.form-control-premium option {
+            background: #1a2537;
+            color: white;
+        }
+
+        .btn-submit-premium {
+            background: var(--bs-secondary);
+            border: none;
+            padding: 1rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border-radius: 10px;
+            transition: all 0.3s ease;
+        }
+
+        .btn-submit-premium:hover {
+            background: #ff6a4d;
+            transform: scale(1.02);
+            box-shadow: 0 10px 20px rgba(255, 126, 95, 0.3);
+        }
+    </style>
+    <!-- AOS Animation CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+    <!-- Custom Cursor -->
+    <div class="custom-cursor d-none d-lg-block" id="cursor"></div>
+    <div class="custom-cursor-dot d-none d-lg-block" id="cursor-dot"></div>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="myBar"></div>
+    </div>
+
+    <!-- Navigation-->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top glass-nav" id="mainNav">
+        <div class="container px-4 px-lg-5">
+            <a class="navbar-brand fw-bold text-white" href="#page-top" style="letter-spacing: 1px;">
+                L&L GLOBAL SERVICES
+            </a>
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+                aria-label="Toggle navigation">
+                Menu
+                <i class="fas fa-bars"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link px-3" href="#about">Nosotros</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#projects">Servicios</a></li>
+                    <li class="nav-item"><a class="nav-link px-3" href="#signup">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Masthead-->
+    <header class="masthead">
+        <div class="container px-4 px-lg-5 d-flex h-100 align-items-center justify-content-center">
+            <div class="d-flex justify-content-center">
+                <div class="text-center" data-aos="zoom-in" data-aos-duration="1000" style="margin-top: -50px;">
+                    <h1 class="mx-auto my-0 text-uppercase text-white" style="font-weight: 900; line-height: 0.85; letter-spacing: -2px;">
+                        <span style="font-size: 6rem; display: block;">L&L GLOBAL</span>
+                        <span style="font-size: 7.5rem; display: block;">SERVICES</span>
+                        <span style="font-size: 1.5rem; display: block; letter-spacing: 10px; margin-top: 10px; opacity: 0.8; font-weight: 400;">E.I.R.L.</span>
+                    </h1>
+                    <style>
+                        @media (max-width: 768px) {
+                            .masthead h1 {
+                                font-size: 2.5rem !important;
+                            }
+                        }
+                    </style>
+                    <h2 class="text-white-50 mx-auto mt-3 mb-5" data-aos="fade-up" data-aos-delay="200"
+                        style="font-weight: 300;">
+                        Especialistas en <span class="typed-text"
+                            style="color: var(--bs-secondary); font-weight: 700; border-bottom: 2px solid var(--bs-secondary);"></span>
+                    </h2>
+                    <div class="d-flex justify-content-center flex-column flex-sm-row gap-3 mt-4">
+                        <a class="btn btn-primary shadow-lg" href="#projects">Explorar Servicios</a>
+                        <a class="btn btn-outline-light"
+                            href="https://wa.me/51921593426?text=Hola%2C%20vengo%20de%20la%20web%20y%20quiero%20una%20cotizacion."
+                            target="_blank"><i class="fab fa-whatsapp me-2"></i>Cotizar Ahora</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span class="small text-uppercase" style="letter-spacing: 2px;">Scroll</span>
+        </div>
+    </header>
+
+    <!-- Marquee Ribbon -->
+    <div class="marquee-wrapper">
+        <div class="marquee-content">
+            <span>✦ ATENDEMOS HOGARES ✦ OFICINAS ✦ COLEGIOS ✦ CLÍNICAS ✦ CONDOMINIOS ✦ LOCALES COMERCIALES </span>
+            <span>✦ ATENDEMOS HOGARES ✦ OFICINAS ✦ COLEGIOS ✦ CLÍNICAS ✦ CONDOMINIOS ✦ LOCALES COMERCIALES </span>
+        </div>
+    </div>
+
+    <!-- About-->
+    <section class="about-section" id="about">
+        <div class="container px-4 px-lg-5 text-center">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-lg-10" data-aos="fade-up">
+                    <h2 class="text-white mb-4">Quiénes Somos</h2>
+                    <p class="text-white-50 mb-5 lead mx-auto" style="max-width: 800px;">
+                        Somos una empresa de servicios generales dedicada a brindar soluciones integrales en
+                        mantenimiento, construcción y tecnología en toda la región. Nacimos para ofrecer un servicio de
+                        alta calidad, responsable y con la garantía que nuestros clientes merecen.
+                    </p>
+                    <div class="row g-4 mt-2">
+                        <div class="col-md-6">
+                            <div class="glass-card p-4 rounded-4"
+                                style="background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1);">
+                                <div class="d-flex align-items-start text-start">
+                                    <div class="bg-secondary p-2 rounded-3 me-3">
+                                        <i class="fas fa-bullseye text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-white h5 mb-2">Nuestra Misión</h3>
+                                        <p class="text-white-50 small mb-0">Brindar soluciones de mantenimiento y
+                                            servicios generales con calidad y garantía, superando las expectativas de
+                                            nuestros clientes en cada proyecto.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="glass-card p-4 rounded-4"
+                                style="background: rgba(15, 23, 42, 0.6); backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1);">
+                                <div class="d-flex align-items-start text-start">
+                                    <div class="bg-primary p-2 rounded-3 me-3">
+                                        <i class="fas fa-eye text-white"></i>
+                                    </div>
+                                    <div>
+                                        <h3 class="text-white h5 mb-2">Nuestra Visión</h3>
+                                        <p class="text-white-50 small mb-0">Ser la empresa líder en servicios generales
+                                            reconocida por nuestra excelencia técnica y la confianza absoluta de
+                                            nuestros clientes.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Wave Divider -->
+        <div class="wave-divider">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Beneficios -->
+    <section class="py-5 bg-black">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 text-center">
+                <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="100">
+                    <i class="fas fa-clock fa-3x text-primary mb-3"></i>
+                    <h4 class="text-white">Puntualidad</h4>
+                    <p class="text-white-50 mb-0">Llegamos a tiempo y cumplimos con los plazos acordados.</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="200">
+                    <i class="fas fa-shield-alt fa-3x text-primary mb-3"></i>
+                    <h4 class="text-white">Garantía</h4>
+                    <p class="text-white-50 mb-0">Todos nuestros trabajos cuentan con garantía de calidad.</p>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+                    <i class="fas fa-user-cog fa-3x text-primary mb-3"></i>
+                    <h4 class="text-white">Profesionales</h4>
+                    <p class="text-white-50 mb-0">Personal altamente capacitado y de absoluta confianza.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services-->
+    <section class="projects-section" id="projects">
+        <div class="container px-4 px-lg-5">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="text-white">Nuestros Servicios</h2>
+                <hr class="mx-auto bg-secondary" style="width: 60px; height: 4px; opacity: 1;" />
+            </div>
+            <div class="row gx-4 gx-lg-5">
+                <!-- Mantenimiento -->
+                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card shadow"
+                        style="background-image: url('assets/img/service-maintenance.png');">
+                        <div class="project-overlay">
+                            <i class="fas fa-tools fa-2x text-secondary mb-3"></i>
+                            <h4 class="text-white h5 mb-2">Mantenimiento</h4>
+                            <p class="text-white-50 small mb-3">Preventivo y correctivo para hogares y negocios.</p>
+                            <a href="https://wa.me/51921593426?text=Hola%2C%20me%20gustaria%20una%20cotizacion%20para%20Mantenimiento%20General."
+                                target="_blank" class="btn btn-secondary btn-sm project-btn">Cotizar Mantenimiento</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Electricidad -->
+                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card shadow"
+                        style="background-image: url('assets/img/service-electricity.png');">
+                        <div class="project-overlay">
+                            <i class="fas fa-bolt fa-2x text-secondary mb-3"></i>
+                            <h4 class="text-white h5 mb-2">Electricidad</h4>
+                            <p class="text-white-50 small mb-3">Instalaciones, tableros y reparación de fallas.</p>
+                            <a href="https://wa.me/51921593426?text=Hola%2C%20necesito%20un%20servicio%20de%20Electricidad.%20%C2%BFPodrian%20ayudarme%3F"
+                                target="_blank" class="btn btn-secondary btn-sm project-btn">Cotizar Electricidad</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Gasfiteria -->
+                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-card shadow" style="background-image: url('assets/img/service-plumbing.png');">
+                        <div class="project-overlay">
+                            <i class="fas fa-faucet fa-2x text-secondary mb-3"></i>
+                            <h4 class="text-white h5 mb-2">Gasfitería</h4>
+                            <p class="text-white-50 small mb-3">Reparación de fugas, tuberías e instalaciones.</p>
+                            <a href="https://wa.me/51921593426?text=Hola%2C%20tengo%20un%20problema%20de%20Gasfiteria%20y%20necesito%20una%20reparacion."
+                                target="_blank" class="btn btn-secondary btn-sm project-btn">Cotizar Gasfitería</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pintura -->
+                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card shadow" style="background-image: url('assets/img/service-painting.png');">
+                        <div class="project-overlay">
+                            <i class="fas fa-paint-roller fa-2x text-secondary mb-3"></i>
+                            <h4 class="text-white h5 mb-2">Pintura</h4>
+                            <p class="text-white-50 small mb-3">Pintado de interiores, exteriores y acabados.</p>
+                            <a href="https://wa.me/51921593426?text=Hola%2C%20me%20interesa%20pintar%20mi%20inmueble.%20%C2%BFPodrian%20cotizarme%3F"
+                                target="_blank" class="btn btn-secondary btn-sm project-btn">Cotizar Pintura</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Construcción e Ingeniería -->
+                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-card shadow"
+                        style="background-image: url('assets/img/service-engineering.jpg');">
+                        <div class="project-overlay">
+                            <i class="fas fa-hard-hat fa-2x text-secondary mb-3"></i>
+                            <h4 class="text-white h5 mb-2">Construcción e Ingeniería</h4>
+                            <p class="text-white-50 small mb-3">Obras civiles, saneamiento, pavimentación y proyectos
+                                energéticos.</p>
+                            <a href="https://wa.me/51921593426?text=Hola%2C%20solicito%20informacion%20sobre%20proyectos%20de%20Construccion%20e%20Ingenieria."
+                                target="_blank" class="btn btn-secondary btn-sm project-btn">Cotizar Ingeniería</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Servicios Tecnológicos (IT) -->
+                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="600">
+                    <div class="project-card shadow" style="background-image: url('assets/img/service-it.jpg');">
+                        <div class="project-overlay">
+                            <i class="fas fa-network-wired fa-2x text-secondary mb-3"></i>
+                            <h4 class="text-white h5 mb-2">Servicios Tecnológicos (IT)</h4>
+                            <p class="text-white-50 small mb-3">Fibra óptica, configuración de redes LAN/WIFI y
+                                mantenimiento de equipos.</p>
+                            <a href="https://wa.me/51921593426?text=Hola%2C%20necesito%20soporte%20o%20instalacion%20de%20Servicios%20Tecnologicos%20(IT)."
+                                target="_blank" class="btn btn-secondary btn-sm project-btn">Cotizar IT / Redes</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mantenimiento y Medio Ambiente -->
+                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="700">
+                    <div class="project-card shadow"
+                        style="background-image: url('assets/img/service-environmental.jpg');">
+                        <div class="project-overlay">
+                            <i class="fas fa-seedling fa-2x text-secondary mb-3"></i>
+                            <h4 class="text-white h5 mb-2">Mantenimiento y Medio Ambiente</h4>
+                            <p class="text-white-50 small mb-3">Limpieza de áreas verdes, remediación de suelos y
+                                gestión de residuos.</p>
+                            <a href="https://wa.me/51921593426?text=Hola%2C%20solicito%20informacion%20sobre%20Mantenimiento%20y%20Medio%20Ambiente."
+                                target="_blank" class="btn btn-secondary btn-sm project-btn">Cotizar Ambiental</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Logística y Transporte -->
+                <div class="col-md-6 col-lg-3 mb-4" data-aos="fade-up" data-aos-delay="800">
+                    <div class="project-card shadow" style="background-image: url('assets/img/service-logistics.jpg');">
+                        <div class="project-overlay">
+                            <i class="fas fa-truck-moving fa-2x text-secondary mb-3"></i>
+                            <h4 class="text-white h5 mb-2">Logística y Transporte</h4>
+                            <p class="text-white-50 small mb-3">Alquiler de maquinaria pesada, transporte terrestre y
+                                fluvial.</p>
+                            <a href="https://wa.me/51921593426?text=Hola%2C%20necesito%20informacion%20sobre%20Logistica%20y%20Alquiler%20de%20Maquinaria."
+                                target="_blank" class="btn btn-secondary btn-sm project-btn">Cotizar Logística</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="py-5 bg-black" id="proceso">
+        <div class="container px-4 px-lg-5">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="text-white mb-2">Nuestro Proceso de Trabajo</h2>
+                <p class="text-white-50">Transparencia y profesionalismo en cada paso.</p>
+                <div class="mx-auto mt-3" style="width: 60px; height: 3px; background: var(--bs-secondary);"></div>
+            </div>
+            <div class="row gx-4 justify-content-center">
+                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-center p-4 h-100 rounded-4"
+                        style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05);">
+                        <div class="bg-secondary d-inline-flex align-items-center justify-content-center rounded-circle mb-3 shadow"
+                            style="width: 70px; height: 70px;">
+                            <i class="fas fa-phone-alt fa-2x text-white"></i>
+                        </div>
+                        <h4 class="text-white h5 mb-3">1. Contacto</h4>
+                        <p class="text-white-50 small mb-0">Escríbenos por WhatsApp o usa el formulario para contarnos
+                            tu necesidad.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-center p-4 h-100 rounded-4"
+                        style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05);">
+                        <div class="bg-primary d-inline-flex align-items-center justify-content-center rounded-circle mb-3 shadow"
+                            style="width: 70px; height: 70px;">
+                            <i class="fas fa-clipboard-list fa-2x text-white"></i>
+                        </div>
+                        <h4 class="text-white h5 mb-3">2. Evaluación</h4>
+                        <p class="text-white-50 small mb-0">Visitamos tu obra o recibimos fotos para darte una
+                            cotización justa y exacta.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-center p-4 h-100 rounded-4"
+                        style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05);">
+                        <div class="bg-secondary d-inline-flex align-items-center justify-content-center rounded-circle mb-3 shadow"
+                            style="width: 70px; height: 70px;">
+                            <i class="fas fa-tools fa-2x text-white"></i>
+                        </div>
+                        <h4 class="text-white h5 mb-3">3. Ejecución</h4>
+                        <p class="text-white-50 small mb-0">Nuestro equipo experto realiza el trabajo con materiales de
+                            primera calidad.</p>
+                    </div>
+                </div>
+                <div class="col-md-3 mb-4" data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-center p-4 h-100 rounded-4"
+                        style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.05);">
+                        <div class="bg-primary d-inline-flex align-items-center justify-content-center rounded-circle mb-3 shadow"
+                            style="width: 70px; height: 70px;">
+                            <i class="fas fa-check-double fa-2x text-white"></i>
+                        </div>
+                        <h4 class="text-white h5 mb-3">4. Entrega</h4>
+                        <p class="text-white-50 small mb-0">Verificamos el resultado contigo y te brindamos garantía por
+                            el servicio.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-5"
+        style="background: #0f172a; border-top: 1px solid rgba(255,255,255,0.05); border-bottom: 1px solid rgba(255,255,255,0.05);">
+        <div class="container px-4 px-lg-5">
+            <div class="row text-center" id="stats">
+                <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-up">
+                    <h2 class="display-4 fw-bold text-secondary counter" data-target="150">0</h2>
+                    <p class="lead mb-0 text-white-50">Trabajos Realizados</p>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="100">
+                    <h2 class="display-4 fw-bold text-secondary counter" data-target="5">0</h2>
+                    <p class="lead mb-0 text-white-50">Años de Experiencia</p>
+                </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                    <h2 class="display-4 fw-bold text-secondary"><span class="counter" data-target="100">0</span>%</h2>
+                    <p class="lead mb-0 text-white-50">Clientes Satisfechos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-5" id="faq"
+        style="background-color: #f8f9fa; border-top: 1px solid #e9ecef; border-bottom: 1px solid #e9ecef;">
+        <div class="container px-4 px-lg-5">
+            <div class="text-center mb-5" data-aos="fade-up">
+                <h2 class="text-dark fw-bold">Preguntas Frecuentes</h2>
+                <hr class="mx-auto" style="width: 50px; height: 3px; background: var(--bs-primary); opacity: 1;" />
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
+                    <div class="accordion custom-light-accordion" id="accordionFAQ">
+                        <div class="accordion-item mb-3 border-0 shadow-sm rounded-3 overflow-hidden">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed bg-white text-dark fw-bold shadow-none"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                    aria-expanded="false" aria-controls="collapseOne" style="padding: 1.25rem;">
+                                    ¿Tiene algún costo la cotización o visita técnica?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                                data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body text-muted bg-white" style="border-top: 1px solid #f1f1f1;">
+                                    La cotización a través de WhatsApp es completamente gratuita. Si se requiere una
+                                    visita presencial para evaluar un trabajo complejo, podría tener un costo mínimo de
+                                    movilidad que se descuenta si apruebas el trabajo.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mb-3 border-0 shadow-sm rounded-3 overflow-hidden">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed bg-white text-dark fw-bold shadow-none"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                    aria-expanded="false" aria-controls="collapseTwo" style="padding: 1.25rem;">
+                                    ¿Brindan garantía por sus trabajos?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                                data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body text-muted bg-white" style="border-top: 1px solid #f1f1f1;">
+                                    ¡Por supuesto! Todos nuestros trabajos de electricidad, pintura, gasfitería y
+                                    mantenimiento cuentan con garantía. Si algo no queda bien, volvemos y lo
+                                    solucionamos sin costo adicional.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item mb-3 border-0 shadow-sm rounded-3 overflow-hidden">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed bg-white text-dark fw-bold shadow-none"
+                                    type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                    aria-expanded="false" aria-controls="collapseThree" style="padding: 1.25rem;">
+                                    ¿Qué métodos de pago aceptan?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                                data-bs-parent="#accordionFAQ">
+                                <div class="accordion-body text-muted bg-white" style="border-top: 1px solid #f1f1f1;">
+                                    Aceptamos pagos en efectivo, transferencias bancarias, Yape y Plin para tu total
+                                    comodidad.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <style>
+            .custom-light-accordion .accordion-button:not(.collapsed) {
+                background-color: #fff !important;
+                color: var(--bs-primary) !important;
+                box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .125);
+            }
+
+            .custom-light-accordion .accordion-item {
+                transition: transform 0.3s ease;
+            }
+
+            .custom-light-accordion .accordion-item:hover {
+                transform: translateY(-3px);
+            }
+        </style>
+    </section>
+
+    <!-- Signup-->
+    <section class="signup-section" id="signup"
+        style="background: linear-gradient(to bottom, rgba(15, 23, 42, 0.85) 0%, rgba(15, 23, 42, 0.95) 100%), url('assets/img/bg-signup-interior.jpg'); background-size: cover; background-position: center; background-attachment: fixed; padding: 8rem 0;">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-md-10 col-lg-8 mx-auto">
+                    <div class="form-glass" data-aos="fade-up">
+                        <div class="text-center mb-5">
+                            <i class="far fa-paper-plane fa-3x mb-3 text-secondary"></i>
+                            <h2 class="text-white mb-3">Solicita una Cotización</h2>
+                            <p class="text-white-50">Déjanos tus datos y nos pondremos en contacto a la brevedad.</p>
+                        </div>
+                        <form class="form-signup contact-form" id="contactForm"
+                            action="https://formsubmit.co/servicios.lylglobalservicios@gmail.com" method="POST"
+                            accept-charset="UTF-8">
+                            <input type="hidden" id="formSubject" name="_subject"
+                                value="Nueva solicitud de cotizacion - L&amp;L Global Services" />
+                            <input type="hidden" name="_template" value="table" />
+                            <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off" />
+                            <div class="row gx-3 gy-4">
+                                <div class="col-md-6">
+                                    <label class="text-white-50 small mb-2 ms-1">Nombre Completo</label>
+                                    <input class="form-control-premium w-100" id="fullName" name="name" type="text"
+                                        placeholder="Ej. Juan Pérez" required />
+                                </div>
+                                <div class="col-md-6">
+                                    <label class="text-white-50 small mb-2 ms-1">Teléfono / WhatsApp</label>
+                                    <input class="form-control-premium w-100" id="phone" name="phone" type="tel"
+                                        placeholder="Ej. 999 999 999" required />
+                                </div>
+                                <div class="col-12">
+                                    <label class="text-white-50 small mb-2 ms-1">Correo Electrónico</label>
+                                    <input class="form-control-premium w-100" id="emailAddress" name="email"
+                                        type="email" placeholder="correo@ejemplo.com" required />
+                                </div>
+                                <div class="col-12">
+                                    <label class="text-white-50 small mb-2 ms-1">Servicio Requerido</label>
+                                    <select class="form-control-premium w-100" id="service" name="service" required
+                                        style="appearance: none;">
+                                        <option value="" disabled selected>Selecciona un servicio</option>
+                                        <option value="Mantenimiento">Mantenimiento General</option>
+                                        <option value="Electricidad">Electricidad</option>
+                                        <option value="Gasfitería">Gasfitería</option>
+                                        <option value="Pintura">Pintura</option>
+                                        <option value="Ingenieria">Construcción e Ingeniería</option>
+                                        <option value="IT">Servicios Tecnológicos (IT)</option>
+                                        <option value="MedioAmbiente">Mantenimiento y Medio Ambiente</option>
+                                        <option value="Logistica">Logística y Transporte</option>
+                                        <option value="Otros">Otros / Consultas</option>
+                                    </select>
+                                </div>
+                                <div class="col-12">
+                                    <label class="text-white-50 small mb-2 ms-1">Mensaje o Detalles</label>
+                                    <textarea class="form-control-premium w-100" id="message" name="message"
+                                        placeholder="Describe brevemente el trabajo a realizar..." rows="4"
+                                        required></textarea>
+                                </div>
+                                <div class="col-12 d-grid mt-4">
+                                    <button class="btn btn-submit-premium text-white" id="submitButton"
+                                        type="submit">Enviar Solicitud</button>
+                                </div>
+                            </div>
+                            <div class="d-none text-success mt-4 text-center fw-bold" id="formSuccessMessage"><i
+                                    class="fas fa-check-circle me-2"></i>¡Mensaje enviado con éxito!</div>
+                            <div class="d-none text-danger mt-4 text-center fw-bold" id="formErrorMessage"><i
+                                    class="fas fa-exclamation-triangle me-2"></i>Error al enviar. Inténtalo de nuevo.
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact-->
+    <section class="contact-section bg-black">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5">
+                <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="100">
+                    <div class="card py-4 h-100 contact-card"
+                        style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); border-radius: 15px;">
+                        <div class="card-body text-center">
+                            <i class="fas fa-map-marked-alt text-secondary mb-3 fa-lg"
+                                style="filter: drop-shadow(0 0 5px rgba(255,140,0,0.3));"></i>
+                            <h4 class="text-uppercase m-0 text-white small fw-bold" style="letter-spacing: 1px;">
+                                Nuestras Sedes</h4>
+                            <hr class="my-3 mx-auto"
+                                style="width: 2rem; border-top: 2px solid var(--bs-secondary); opacity: 1;" />
+                            <div class="small text-white-50" style="font-size: 0.85rem;">
+                                <p class="mb-1"><strong>Iquitos:</strong> Calle Zaragoza #260, Belén</p>
+                                <p class="mb-0"><strong>Nauta:</strong> AAHH 01 Enero s/n</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="200">
+                    <div class="card py-4 h-100 contact-card"
+                        style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); border-radius: 15px;">
+                        <div class="card-body text-center">
+                            <i class="fas fa-envelope text-primary mb-3 fa-lg"
+                                style="filter: drop-shadow(0 0 5px rgba(0,210,255,0.3));"></i>
+                            <h4 class="text-uppercase m-0 text-white small fw-bold" style="letter-spacing: 1px;">Correo
+                                Directo</h4>
+                            <hr class="my-3 mx-auto"
+                                style="width: 2rem; border-top: 2px solid var(--bs-primary); opacity: 1;" />
+                            <div class="small" style="font-size: 0.85rem;">
+                                <a href="mailto:servicios.lylglobalservicios@gmail.com"
+                                    class="text-white-50 text-decoration-none hover-primary">servicios.lylglobalservicios@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4 mb-md-0" data-aos="fade-up" data-aos-delay="300">
+                    <div class="card py-4 h-100 contact-card"
+                        style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08); transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); border-radius: 15px;">
+                        <div class="card-body text-center">
+                            <i class="fas fa-mobile-alt text-secondary mb-3 fa-lg"
+                                style="filter: drop-shadow(0 0 5px rgba(255,140,0,0.3));"></i>
+                            <h4 class="text-uppercase m-0 text-white small fw-bold" style="letter-spacing: 1px;">
+                                Teléfono</h4>
+                            <hr class="my-3 mx-auto"
+                                style="width: 2rem; border-top: 2px solid var(--bs-secondary); opacity: 1;" />
+                            <div class="small text-white-50" style="font-size: 0.85rem;">
+                                <p class="mb-1 fw-bold text-white">+51 921 593 426</p>
+                                <p class="small mb-0">Atención 24/7</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <style>
+                .contact-card:hover {
+                    transform: translateY(-10px) scale(1.02);
+                    background: rgba(255, 255, 255, 0.06) !important;
+                    border-color: rgba(255, 126, 95, 0.3) !important;
+                    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4) !important;
+                }
+
+                .hover-primary:hover {
+                    color: var(--bs-primary) !important;
+                }
+            </style>
+            <!-- Google Maps Embed -->
+            <div class="row mt-5">
+                <div class="col-12" data-aos="fade-up">
+                    <div class="card bg-transparent border-0">
+                        <div class="card-body p-0 rounded overflow-hidden shadow-lg" style="height: 350px;">
+                            <iframe
+                                src="https://maps.google.com/maps?q=Calle%20Zaragoza%20260,%20Belen,%20Iquitos,%20Peru&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <style>
+                .social a {
+                    transition: all 0.3s ease;
+                }
+
+                .social a:hover {
+                    background-color: var(--bs-secondary) !important;
+                    color: white !important;
+                    transform: translateY(-3px);
+                    box-shadow: 0 5px 15px rgba(255, 140, 0, 0.4);
+                }
+            </style>
+            <div class="social d-flex justify-content-center mt-5">
+                <a class="mx-2"
+                    href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=servicios.lylglobalservicios%40gmail.com&amp;su=Solicitud%20de%20cotizacion&amp;body=Hola%2C%20quiero%20informacion%20sobre%20sus%20servicios."
+                    target="_blank" rel="noopener noreferrer" aria-label="Correo"><i class="fas fa-envelope"></i></a>
+                <a class="mx-2"
+                    href="https://wa.me/51921593426?text=Hola%2C%20quiero%20informacion%20sobre%20sus%20servicios."
+                    target="_blank" rel="noopener noreferrer" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                <a class="mx-2" href="tel:+51921593426" aria-label="Telefono"><i class="fas fa-phone"></i></a>
+            </div>
+        </div>
+    </section>
+    <div class="wa-tooltip">¡Escríbenos!</div>
+    <a class="whatsapp-float-btn"
+        href="https://wa.me/51921593426?text=Hola%2C%20quiero%20informacion%20sobre%20sus%20servicios." target="_blank"
+        rel="noopener noreferrer" aria-label="Escribenos por WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+    <!-- Footer-->
+    <footer class="footer bg-black small text-center text-white-50">
+        <div class="container px-4 px-lg-5">Copyright &copy; L&L Global Services 2026</div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="js/scripts.js"></script>
+    <!-- Back to Top -->
+    <a href="#page-top" class="back-to-top" id="backToTopBtn">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ once: true, offset: 100 });
+
+        // Back to top button
+        const backToTop = document.getElementById('backToTopBtn');
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 300) {
+                backToTop.classList.add('active');
+            } else {
+                backToTop.classList.remove('active');
+            }
+        });
+
+        // Animated Counters
+        const counters = document.querySelectorAll('.counter');
+        const speed = 200;
+        const animateCounters = () => {
+            counters.forEach(counter => {
+                const updateCount = () => {
+                    const target = +counter.getAttribute('data-target');
+                    const count = +counter.innerText;
+                    const inc = target / speed;
+                    if (count < target) {
+                        counter.innerText = Math.ceil(count + inc);
+                        setTimeout(updateCount, 15);
+                    } else {
+                        counter.innerText = target;
+                    }
+                };
+                updateCount();
+            });
+        };
+
+        let animated = false;
+        window.addEventListener('scroll', () => {
+            const statsSection = document.getElementById('stats');
+            if (statsSection && !animated) {
+                const rect = statsSection.getBoundingClientRect();
+                if (rect.top < window.innerHeight) {
+                    animateCounters();
+                    animated = true;
+                }
+            }
+        });
+
+        // Preloader
+        window.addEventListener('load', () => {
+            const preloader = document.getElementById('preloader');
+            if (preloader) {
+                preloader.style.opacity = '0';
+                setTimeout(() => {
+                    preloader.style.display = 'none';
+                }, 500);
+            }
+        });
+
+        // Scroll Progress Bar
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            const myBar = document.getElementById('myBar');
+            if (myBar) myBar.style.width = scrolled + '%';
+        });
+    </script>
+    <!-- Typed JS -->
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <!-- Particles JS y Vanilla Tilt eliminados por no usarse -->
+
+
+    <script>
+        // Initialize Typed.js
+        if (document.querySelector('.typed-text')) {
+            new Typed('.typed-text', {
+                strings: ["Pintura.", "Electricidad.", "Gasfitería.", "Mantenimiento.", "tu Hogar."],
+                typeSpeed: 60,
+                backSpeed: 40,
+                backDelay: 1500,
+                loop: true
+            });
+        }
+
+        // Lógica del Cursor Personalizado
+        if (window.matchMedia("(pointer: fine)").matches) {
+            const cursor = document.getElementById('cursor');
+            const cursorDot = document.getElementById('cursor-dot');
+            if (cursor && cursorDot) {
+                document.addEventListener('mousemove', (e) => {
+                    cursor.style.left = e.clientX + 'px';
+                    cursor.style.top = e.clientY + 'px';
+                    cursorDot.style.left = e.clientX + 'px';
+                    cursorDot.style.top = e.clientY + 'px';
+                });
+                document.querySelectorAll('a, button, input, textarea, .accordion-button').forEach(el => {
+                    el.addEventListener('mouseenter', () => cursor.classList.add('cursor-hover'));
+                    el.addEventListener('mouseleave', () => cursor.classList.remove('cursor-hover'));
+                });
+            }
+        }
+    </script>
+</body>
+
+</html>
