@@ -10,6 +10,10 @@
     --bs-body-font-family: 'Outfit', sans-serif;
 }
 
+html {
+    scroll-padding-top: 80px; /* Evita que el menú fijo tape los títulos de sección al navegar */
+}
+
 body {
     font-family: var(--bs-body-font-family);
     scroll-behavior: smooth;
@@ -68,7 +72,7 @@ body {
 }
 
 .about-section {
-    background: linear-gradient(to bottom, rgba(15, 23, 42, 0.8) 0%, rgba(15, 23, 42, 0.9) 100%), url('../assets/img/bg-signup-interior.jpg');
+    background: linear-gradient(to bottom, rgba(15, 23, 42, 0.5) 0%, rgba(15, 23, 42, 0.8) 100%), url('../assets/img/bg-signup-interior.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -596,6 +600,35 @@ body {
     transform: translateY(0);
 }
 
+/* Efecto Brillo (Shine) Premium */
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        to right,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.2) 50%,
+        rgba(255, 255, 255, 0) 100%
+    );
+    transform: skewX(-25deg);
+    z-index: 2;
+    pointer-events: none;
+}
+
+.project-card:hover::before {
+    animation: shine 0.8s ease;
+}
+
+@keyframes shine {
+    100% {
+        left: 150%;
+    }
+}
+
 .projects-section {
     background: linear-gradient(to bottom, #0f172a 0%, #1e293b 100%);
     position: relative;
@@ -613,8 +646,8 @@ body {
     background: url('../assets/img/bg-projects-overlay.jpg');
     background-size: cover;
     background-position: center;
-    opacity: 0.1;
-    /* Imagen de fondo muy sutil */
+    opacity: 0.15;
+    /* Imagen de fondo un poco más notoria */
     pointer-events: none;
 }
 
@@ -665,6 +698,14 @@ select.form-control-premium option {
     color: white;
 }
 
+.signup-section {
+    background: linear-gradient(to bottom, rgba(15, 23, 42, 0.6) 0%, rgba(15, 23, 42, 0.8) 100%), url('../assets/img/bg-signup-interior.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 8rem 0;
+}
+
 .btn-submit-premium {
     background: var(--bs-secondary);
     border: none;
@@ -683,6 +724,16 @@ select.form-control-premium option {
 }
 
 /* Hero Adaptive Title */
+/* Hero Adaptive Title Premium Refactor */
+.hero-adaptive-title {
+    font-weight: 900;
+    line-height: 0.9;
+    letter-spacing: -1px;
+    text-shadow: 0 4px 15px rgba(0,0,0,0.5);
+    margin: 0 auto;
+    text-transform: uppercase;
+}
+
 .hero-adaptive-title .l1 {
     font-size: 5.5rem;
     display: block;
@@ -781,4 +832,135 @@ select.form-control-premium option {
 /* Image Sharpening */
 img {
     image-rendering: -webkit-optimize-contrast;
+}
+
+/* ========================================= */
+/* --- OPTIMIZACIONES MÓVILES EXCLUSIVAS --- */
+/* ========================================= */
+
+/* Tablet & Mobile (Menú de navegación) */
+@media (max-width: 991.98px) {
+    .navbar-collapse {
+        background: rgba(15, 23, 42, 0.98); /* Fondo sólido y oscuro para leer bien el menú */
+        border-radius: 12px;
+        padding: 1rem;
+        margin-top: 15px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .navbar-toggler {
+        color: white !important;
+        border-color: rgba(255,255,255,0.3) !important;
+        padding: 0.5rem 0.8rem;
+    }
+    .navbar-toggler-icon {
+        filter: invert(1) brightness(2); /* Hace que el icono de hamburguesa sea blanco */
+    }
+    .navbar-nav .nav-link {
+        padding: 0.8rem !important;
+        font-size: 1.05rem;
+        border-radius: 8px;
+        color: var(--bs-secondary) !important;
+        text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    }
+}
+
+/* Solo Móviles */
+@media (max-width: 767.98px) {
+    /* 1. Ajuste del espaciado superior en Hero y botones full width */
+    .masthead > .container > .d-flex > .text-center {
+        margin-top: 0 !important;
+    }
+    .masthead .flex-column a.btn {
+        width: 100%;
+        margin-bottom: 0.5rem;
+        padding: 0.9rem;
+    }
+
+    /* 2. Reducción de paddings en secciones grandes (Elimina el gran separador oscuro) */
+    .about-section, .signup-section {
+        padding: 2.5rem 0 !important;
+    }
+    
+    .projects-section, #proceso, #faq {
+        padding-top: 3.5rem !important;
+        padding-bottom: 3.5rem !important;
+    }
+    
+    .about-section p.lead {
+        font-size: 1.05rem; /* Texto más legible en móvil */
+        line-height: 1.6;
+    }
+
+    /* 3. Ajuste del formulario de contacto para no perder espacio lateral */
+    .form-glass {
+        padding: 1.5rem !important;
+        border-radius: 15px;
+    }
+
+    /* 4. Altura de tarjetas de servicio para reducir scroll infinito */
+    .project-card {
+        height: 280px !important;
+    }
+    .project-overlay h4 {
+        font-size: 1.25rem !important;
+    }
+    .project-overlay p {
+        font-size: 0.9rem;
+    }
+
+    /* 5. Ajuste del tamaño de los números estadísticos */
+    #stats .display-4 {
+        font-size: 2.8rem !important;
+    }
+    #stats p.lead {
+        font-size: 1rem;
+    }
+
+    /* 6. Reposicionar WhatsApp flotante para que no estorbe */
+    .whatsapp-float-btn {
+        width: 55px !important;
+        height: 55px !important;
+        bottom: 20px !important;
+        right: 20px !important;
+        font-size: 28px !important;
+    }
+    
+    /* 7. Ocultar tooltip de WhatsApp en móviles (suele causar desborde horizontal) */
+    .wa-tooltip {
+        display: none !important;
+    }
+
+    /* 8. Botón regresar arriba más pequeño y reubicado */
+    .back-to-top {
+        bottom: 85px !important;
+        right: 27px !important;
+        width: 40px !important;
+        height: 40px !important;
+        font-size: 16px !important;
+    }
+    
+    /* 9. Ajustar el contenedor del mapa para móviles */
+    .contact-section .card-body.p-0 {
+        height: 250px !important;
+    }
+    
+    /* 10. Tarjetas de proceso más compactas */
+    #proceso .rounded-4 {
+        padding: 1.5rem !important;
+    }
+    
+    /* 11. Cinta de texto continuo (Marquee) ajustada */
+    .marquee-wrapper {
+        font-size: 0.85rem;
+        padding: 6px 0;
+    }
+}
+
+/* Pantallas extra pequeñas (iPhone SE, etc) */
+@media (max-width: 375px) {
+    .hero-adaptive-title .l1 { font-size: 1.8rem !important; }
+    .hero-adaptive-title .l2 { font-size: 2.5rem !important; }
+    .hero-adaptive-title .l3 { font-size: 0.9rem !important; letter-spacing: 3px !important; }
+    .masthead h2 { font-size: 1.1rem !important; }
 }
